@@ -497,6 +497,254 @@ window.TEST_DATA = [
     "key": "hsk2/set_002"
   },
   {
+    "id": "set_003",
+    "title": "HSK2 リスニング 1文ずつ (3)",
+    "level": "HSK2",
+    "sentences": [
+      {
+        "n": 1,
+        "zh": "现在下雪了，天气很冷。",
+        "ja": "今、雪が降っていて、天気はとても寒いです。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk2/set_003/s01.mp3",
+        "pinyin": "xiàn zài xià xuě le， tiān qì hěn lěng。"
+      },
+      {
+        "n": 2,
+        "zh": "我姐姐比我大三岁。",
+        "ja": "私の姉は私より3歳年上です。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk2/set_003/s02.mp3",
+        "pinyin": "wǒ jiě jiě bǐ wǒ dà sān suì。"
+      },
+      {
+        "n": 3,
+        "zh": "你的手机在桌子上。",
+        "ja": "あなたの携帯電話は机の上にあります。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk2/set_003/s03.mp3",
+        "pinyin": "nǐ de shǒu jī zài zhuō zi shàng。"
+      },
+      {
+        "n": 4,
+        "zh": "我爸爸是老师，我妈妈是医生。",
+        "ja": "私の父は先生で、母は医者です。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk2/set_003/s04.mp3",
+        "pinyin": "wǒ bà bà shì lǎo shī， wǒ mā mā shì yī shēng。"
+      },
+      {
+        "n": 5,
+        "zh": "你喜欢什么颜色？我喜欢红的和白的。",
+        "ja": "あなたは何色が好きですか。私は赤と白が好きです。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk2/set_003/s05.mp3",
+        "pinyin": "nǐ xǐ huān shén me yán sè？ wǒ xǐ huān hóng de hé bái de。"
+      },
+      {
+        "n": 6,
+        "zh": "请你等一下，我五分钟就到。",
+        "ja": "少し待ってください、5分で着きます。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk2/set_003/s06.mp3",
+        "pinyin": "qǐng nǐ děng yí xià， wǒ wǔ fēn zhōng jiù dào。"
+      },
+      {
+        "n": 7,
+        "zh": "你的手表几点了？",
+        "ja": "あなたの腕時計は何時ですか。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk2/set_003/s07.mp3",
+        "pinyin": "nǐ de shǒu biǎo jǐ diǎn le？"
+      },
+      {
+        "n": 8,
+        "zh": "我们中午一起吃米饭吧。",
+        "ja": "お昼に一緒にご飯を食べましょう。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk2/set_003/s08.mp3",
+        "pinyin": "wǒ men zhōng wǔ yì qǐ chī mǐ fàn ba。"
+      },
+      {
+        "n": 9,
+        "zh": "你的房间很大。",
+        "ja": "あなたの部屋はとても広いです。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk2/set_003/s09.mp3",
+        "pinyin": "nǐ de fáng jiān hěn dà。"
+      },
+      {
+        "n": 10,
+        "zh": "他晚上运动，身体很好。",
+        "ja": "彼は夜に運動していて、体がとても丈夫です。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk2/set_003/s10.mp3",
+        "pinyin": "tā wǎn shàng yùn dòng， shēn tǐ hěn hǎo。"
+      },
+      {
+        "n": 11,
+        "zh": "我想请你去饭店吃鱼，可以吗？",
+        "ja": "レストランへ魚を食べに行くのにご招待したいのですが、いいですか。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk2/set_003/s11.mp3",
+        "pinyin": "wǒ xiǎng qǐng nǐ qù fàn diàn chī yú， kě yǐ ma？"
+      },
+      {
+        "n": 12,
+        "zh": "请问，医院怎么走？",
+        "ja": "すみません、病院へはどう行けばいいですか。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk2/set_003/s12.mp3",
+        "pinyin": "qǐng wèn， yī yuàn zěn me zǒu？"
+      },
+      {
+        "n": 13,
+        "zh": "我在火车站等你。",
+        "ja": "私は駅であなたを待っています。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk2/set_003/s13.mp3",
+        "pinyin": "wǒ zài huǒ chē zhàn děng nǐ。"
+      },
+      {
+        "n": 14,
+        "zh": "这个问题他不知道，你知道吗？",
+        "ja": "この問題を彼は知りません、あなたは知っていますか。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk2/set_003/s14.mp3",
+        "pinyin": "zhè ge wèn tí tā bù zhī dào， nǐ zhī dào ma？"
+      },
+      {
+        "n": 15,
+        "zh": "我今天很高兴，因为明天是星期六。",
+        "ja": "私は今日とても嬉しいです、明日が土曜日だからです。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk2/set_003/s15.mp3",
+        "pinyin": "wǒ jīn tiān hěn gāo xìng， yīn wèi míng tiān shì xīng qī liù。"
+      },
+      {
+        "n": 16,
+        "zh": "你今天穿的衣服很漂亮。",
+        "ja": "あなたが今日着ている服はとてもきれいです。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk2/set_003/s16.mp3",
+        "pinyin": "nǐ jīn tiān chuān de yī fú hěn piào liàng。"
+      },
+      {
+        "n": 17,
+        "zh": "我朋友送了我一本书。",
+        "ja": "友達が私に本を1冊くれました。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk2/set_003/s17.mp3",
+        "pinyin": "wǒ péng yǒu sòng le wǒ yī běn shū。"
+      },
+      {
+        "n": 18,
+        "zh": "你叫什么名字？",
+        "ja": "あなたの名前は何ですか。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk2/set_003/s18.mp3",
+        "pinyin": "nǐ jiào shén me míng zì？"
+      },
+      {
+        "n": 19,
+        "zh": "我在公司等你。",
+        "ja": "私は会社であなたを待っています。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk2/set_003/s19.mp3",
+        "pinyin": "wǒ zài gōng sī děng nǐ。"
+      },
+      {
+        "n": 20,
+        "zh": "他的书还在教室里。",
+        "ja": "彼の本はまだ教室の中にあります。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk2/set_003/s20.mp3",
+        "pinyin": "tā de shū hái zài jiào shì lǐ。"
+      },
+      {
+        "n": 21,
+        "zh": "我今天很忙，没有时间休息。",
+        "ja": "私は今日とても忙しくて、休む時間がありません。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk2/set_003/s21.mp3",
+        "pinyin": "wǒ jīn tiān hěn máng， méi yǒu shí jiān xiū xī。"
+      },
+      {
+        "n": 22,
+        "zh": "你要不要和我们一起去看电影？",
+        "ja": "私たちと一緒に映画を見に行きませんか。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk2/set_003/s22.mp3",
+        "pinyin": "nǐ yào bù yào hé wǒ men yì qǐ qù kàn diàn yǐng？"
+      },
+      {
+        "n": 23,
+        "zh": "我姐姐是老师，她在学校工作。",
+        "ja": "私の姉は先生で、学校で働いています。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk2/set_003/s23.mp3",
+        "pinyin": "wǒ jiě jiě shì lǎo shī， tā zài xué xiào gōng zuò。"
+      },
+      {
+        "n": 24,
+        "zh": "这儿很远，我们坐公共汽车去吧。",
+        "ja": "ここは遠いので、バスで行きましょう。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk2/set_003/s24.mp3",
+        "pinyin": "zhè ér hěn yuǎn， wǒ men zuò gōng gòng qì chē qù ba。"
+      },
+      {
+        "n": 25,
+        "zh": "我想给你打电话。",
+        "ja": "私はあなたに電話をかけたいです。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk2/set_003/s25.mp3",
+        "pinyin": "wǒ xiǎng gěi nǐ dǎ diàn huà。"
+      },
+      {
+        "n": 26,
+        "zh": "你今天为什么不高兴？",
+        "ja": "あなたは今日どうして嬉しくないのですか。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk2/set_003/s26.mp3",
+        "pinyin": "nǐ jīn tiān wèi shén me bù gāo xìng？"
+      },
+      {
+        "n": 27,
+        "zh": "我们的老师非常好。",
+        "ja": "私たちの先生はとても良い人です。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk2/set_003/s27.mp3",
+        "pinyin": "wǒ men de lǎo shī fēi cháng hǎo。"
+      },
+      {
+        "n": 28,
+        "zh": "我想和你说一件事情。",
+        "ja": "あなたに1つ話したいことがあります。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk2/set_003/s28.mp3",
+        "pinyin": "wǒ xiǎng hé nǐ shuō yī jiàn shì qíng。"
+      },
+      {
+        "n": 29,
+        "zh": "我在家看电视，也在家吃米饭。",
+        "ja": "私は家でテレビを見て、家でご飯も食べます。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk2/set_003/s29.mp3",
+        "pinyin": "wǒ zài jiā kàn diàn shì， yě zài jiā chī mǐ fàn。"
+      },
+      {
+        "n": 30,
+        "zh": "你们公司在哪儿？",
+        "ja": "あなたたちの会社はどこにありますか。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk2/set_003/s30.mp3",
+        "pinyin": "nǐ men gōng sī zài nǎ ér？"
+      }
+    ],
+    "key": "hsk2/set_003"
+  },
+  {
     "id": "set_001",
     "title": "HSK3 リスニング 1文ずつ (1)",
     "level": "HSK3",
