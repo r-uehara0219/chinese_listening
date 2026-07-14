@@ -247,5 +247,253 @@ window.TEST_DATA = [
       }
     ],
     "key": "hsk2/set_001"
+  },
+  {
+    "id": "set_001",
+    "title": "HSK3 リスニング 1文ずつ (1)",
+    "level": "HSK3",
+    "sentences": [
+      {
+        "n": 1,
+        "zh": "我打算下个星期六去爬山。",
+        "ja": "私は来週の土曜日に山登りに行くつもりです。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk3/set_001/s01.mp3",
+        "pinyin": "wǒ dǎ suàn xià gè xīng qī liù qù pá shān。"
+      },
+      {
+        "n": 2,
+        "zh": "这件衬衫是我姐姐送给我的生日礼物。",
+        "ja": "このシャツは姉が私にくれた誕生日プレゼントです。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk3/set_001/s02.mp3",
+        "pinyin": "zhè jiàn chèn shān shì wǒ jiě jiě sòng gěi wǒ de shēng rì lǐ wù。"
+      },
+      {
+        "n": 3,
+        "zh": "虽然刮风了，但是天气还是很好。",
+        "ja": "風が吹いていますが、天気はやはり良いです。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk3/set_001/s03.mp3",
+        "pinyin": "suī rán guā fēng le， dàn shì tiān qì hái shì hěn hǎo。"
+      },
+      {
+        "n": 4,
+        "zh": "我把护照忘记在家里了，现在很着急。",
+        "ja": "パスポートを家に忘れてしまい、今とても焦っています。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk3/set_001/s04.mp3",
+        "pinyin": "wǒ bǎ hù zhào wàng jì zài jiā lǐ le， xiàn zài hěn zháo jí。"
+      },
+      {
+        "n": 5,
+        "zh": "他被经理叫到了办公室。",
+        "ja": "彼はマネージャーにオフィスに呼ばれました。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk3/set_001/s05.mp3",
+        "pinyin": "tā bèi jīng lǐ jiào dào le bàn gōng shì。"
+      },
+      {
+        "n": 6,
+        "zh": "我觉得这个句子的意思不太清楚，你能再讲一次吗？",
+        "ja": "この文の意味があまりはっきりしないと思います、もう一度説明してもらえますか。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk3/set_001/s06.mp3",
+        "pinyin": "wǒ jué de zhè ge jù zi de yì si bù tài qīng chǔ， nǐ néng zài jiǎng yī cì ma？"
+      },
+      {
+        "n": 7,
+        "zh": "除了游泳，他还喜欢打篮球和骑自行车。",
+        "ja": "水泳のほかに、彼はバスケットボールと自転車に乗るのも好きです。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk3/set_001/s07.mp3",
+        "pinyin": "chú le yóu yǒng， tā hái xǐ huān dǎ lán qiú hé qí zì xíng chē。"
+      },
+      {
+        "n": 8,
+        "zh": "如果明天不下雨，我们就去公园锻炼身体。",
+        "ja": "もし明日雨が降らなければ、私たちは公園へ体を鍛えに行きます。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk3/set_001/s08.mp3",
+        "pinyin": "rú guǒ míng tiān bù xià yǔ， wǒ men jiù qù gōng yuán duàn liàn shēn tǐ。"
+      },
+      {
+        "n": 9,
+        "zh": "我最近感冒了，一直发烧，也不想吃东西。",
+        "ja": "私は最近風邪を引いて、ずっと熱があり、何も食べたくありません。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk3/set_001/s09.mp3",
+        "pinyin": "wǒ zuì jìn gǎn mào le， yì zhí fā shāo， yě bù xiǎng chī dōng xī。"
+      },
+      {
+        "n": 10,
+        "zh": "这家超市附近有一个很大的图书馆。",
+        "ja": "このスーパーの近くに大きな図書館があります。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk3/set_001/s10.mp3",
+        "pinyin": "zhè jiā chāo shì fù jìn yǒu yí gè hěn dà de tú shū guǎn。"
+      },
+      {
+        "n": 11,
+        "zh": "她的中文水平提高得很快，说得也越来越好。",
+        "ja": "彼女の中国語のレベルは急速に上達していて、話すのもますます上手になっています。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk3/set_001/s11.mp3",
+        "pinyin": "tā de zhōng wén shuǐ píng tí gāo dé hěn kuài， shuō dé yě yuè lái yuè hǎo。"
+      },
+      {
+        "n": 12,
+        "zh": "我们坐地铁去比较方便，还是坐出租车去？",
+        "ja": "地下鉄で行くほうが便利ですか、それともタクシーで行きますか。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk3/set_001/s12.mp3",
+        "pinyin": "wǒ men zuò dì tiě qù bǐ jiào fāng biàn， hái shì zuò chū zū chē qù？"
+      },
+      {
+        "n": 13,
+        "zh": "经理让我明天早上八点参加一个重要的会议。",
+        "ja": "マネージャーは私に明日の朝8時に重要な会議に出席するように言いました。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk3/set_001/s13.mp3",
+        "pinyin": "jīng lǐ ràng wǒ míng tiān zǎo shàng bā diǎn cān jiā yí gè zhòng yào de huì yì。"
+      },
+      {
+        "n": 14,
+        "zh": "我打扫了房间，也洗了衣服，然后去超市买东西。",
+        "ja": "私は部屋を掃除して、洗濯もして、それからスーパーへ買い物に行きました。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk3/set_001/s14.mp3",
+        "pinyin": "wǒ dǎ sǎo le fáng jiān， yě xǐ le yī fú， rán hòu qù chāo shì mǎi dōng xī。"
+      },
+      {
+        "n": 15,
+        "zh": "这条裤子有点儿大，你能不能换一条小一点儿的？",
+        "ja": "このズボンは少し大きいです、もう少し小さいものに交換してもらえますか。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk3/set_001/s15.mp3",
+        "pinyin": "zhè tiáo kù zi yǒu diǎn ér dà， nǐ néng bù néng huàn yī tiáo xiǎo yì diǎn ér de？"
+      },
+      {
+        "n": 16,
+        "zh": "我记得他的生日是九月二十号，是不是？",
+        "ja": "彼の誕生日は9月20日だったと思いますが、そうですよね。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk3/set_001/s16.mp3",
+        "pinyin": "wǒ jì de tā de shēng rì shì jiǔ yuè èr shí hào， shì bú shì？"
+      },
+      {
+        "n": 17,
+        "zh": "别难过了，这件事情不是你的错。",
+        "ja": "悲しまないで、この件はあなたのせいではありません。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk3/set_001/s17.mp3",
+        "pinyin": "bié nán guò le， zhè jiàn shì qíng bú shì nǐ de cuò。"
+      },
+      {
+        "n": 18,
+        "zh": "我打算学习游泳，但是一直没有机会。",
+        "ja": "私は水泳を習うつもりですが、ずっと機会がありません。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk3/set_001/s18.mp3",
+        "pinyin": "wǒ dǎ suàn xué xí yóu yǒng， dàn shì yì zhí méi yǒu jī huì。"
+      },
+      {
+        "n": 19,
+        "zh": "这个故事很有意思，我看了两次还想再看。",
+        "ja": "この物語はとても面白くて、2回読んでもまた読みたいです。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk3/set_001/s19.mp3",
+        "pinyin": "zhè ge gù shì hěn yǒu yì si， wǒ kàn le liǎng cì hái xiǎng zài kàn。"
+      },
+      {
+        "n": 20,
+        "zh": "请把这张照片发到我的电子邮件里。",
+        "ja": "この写真を私のメールに送ってください。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk3/set_001/s20.mp3",
+        "pinyin": "qǐng bǎ zhè zhāng zhào piān fā dào wǒ de diàn zi yóu jiàn lǐ。"
+      },
+      {
+        "n": 21,
+        "zh": "我们公司附近新开了一家商店，环境很安静。",
+        "ja": "私たちの会社の近くに新しく店ができて、環境がとても静かです。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk3/set_001/s21.mp3",
+        "pinyin": "wǒ men gōng sī fù jìn xīn kāi le yī jiā shāng diàn， huán jìng hěn ān jìng。"
+      },
+      {
+        "n": 22,
+        "zh": "他虽然很努力，但是这次考试成绩不太好。",
+        "ja": "彼はとても努力しましたが、今回の試験の成績はあまり良くありませんでした。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk3/set_001/s22.mp3",
+        "pinyin": "tā suī rán hěn nǔ lì， dàn shì zhè cì kǎo shì chéng jì bù tài hǎo。"
+      },
+      {
+        "n": 23,
+        "zh": "你放心，这个问题我们一定会想办法解决的。",
+        "ja": "安心してください、この問題は私たちが必ず方法を考えて解決します。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk3/set_001/s23.mp3",
+        "pinyin": "nǐ fàng xīn， zhè ge wèn tí wǒ men yí dìng huì xiǎng bàn fǎ jiě jué de。"
+      },
+      {
+        "n": 24,
+        "zh": "我打算这个周末去银行换一点儿钱。",
+        "ja": "私は今週末、銀行へお金を両替しに行くつもりです。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk3/set_001/s24.mp3",
+        "pinyin": "wǒ dǎ suàn zhè ge zhōu mò qù yín háng huàn yì diǎn ér qián。"
+      },
+      {
+        "n": 25,
+        "zh": "她一边听音乐，一边做作业。",
+        "ja": "彼女は音楽を聴きながら宿題をしています。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk3/set_001/s25.mp3",
+        "pinyin": "tā yī biān tīng yīn yuè， yī biān zuò zuò yè。"
+      },
+      {
+        "n": 26,
+        "zh": "这个包太大了，一个人拿不了，你能不能来帮忙？",
+        "ja": "このカバンは大きすぎて、一人では持てません、手伝いに来てもらえますか。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk3/set_001/s26.mp3",
+        "pinyin": "zhè ge bāo tài dà le， yí gè rén ná bù liǎo， nǐ néng bù néng lái bāng máng？"
+      },
+      {
+        "n": 27,
+        "zh": "我们先去吃点儿东西，然后再去看电影，怎么样？",
+        "ja": "先に何か食べてから、それから映画を見に行くのはどうですか。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk3/set_001/s27.mp3",
+        "pinyin": "wǒ men xiān qù chī diǎn ér dōng xī， rán hòu zài qù kàn diàn yǐng， zěn me yàng？"
+      },
+      {
+        "n": 28,
+        "zh": "我对中国历史很感兴趣。",
+        "ja": "私は中国の歴史にとても興味があります。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk3/set_001/s28.mp3",
+        "pinyin": "wǒ duì zhōng guó lì shǐ hěn gǎn xìng qù。"
+      },
+      {
+        "n": 29,
+        "zh": "他终于决定跟女朋友结婚了。",
+        "ja": "彼はついに彼女と結婚することを決めました。",
+        "voice": "zh-CN-XiaoxiaoNeural",
+        "audio": "audio/hsk3/set_001/s29.mp3",
+        "pinyin": "tā zhōng yú jué dìng gēn nǚ péng yǒu jié hūn le。"
+      },
+      {
+        "n": 30,
+        "zh": "你的手机忘记在办公室了，我给你拿过来了。",
+        "ja": "あなたの携帯電話をオフィスに忘れましたよ、持ってきてあげました。",
+        "voice": "zh-CN-YunxiNeural",
+        "audio": "audio/hsk3/set_001/s30.mp3",
+        "pinyin": "nǐ de shǒu jī wàng jì zài bàn gōng shì le， wǒ gěi nǐ ná guò lái le。"
+      }
+    ],
+    "key": "hsk3/set_001"
   }
 ];
