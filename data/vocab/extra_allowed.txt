@@ -1,0 +1,14 @@
+# Explicit exceptions shared across ALL HSK levels (hsk_vocab.py unions this
+# into every level's cumulative word set -- see data/vocab/raw/ for the
+# per-level official lists this sits alongside).
+#
+# Only grammatical morphemes whose base form is already on an official list are
+# allowed here. The official HSK2 list enumerates 我们 / 没有 / 一点儿 but not
+# the bare morpheme, so a strict check would reject 他们 / 没去 / 玩儿 -- all
+# squarely within HSK2 grammar. Nothing that expands the *vocabulary* belongs
+# in this file: content words like 半, 今年, 杯, 天, 色 are deliberately NOT
+# here, and sentences must avoid them (or wait until they appear on a higher
+# level's official list, at which point drop them from here entirely).
+们
+没
+儿

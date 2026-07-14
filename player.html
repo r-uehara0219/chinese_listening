@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HSK2 リスニング</title>
+<style>
+  :root {
+    --bg: #faf9f7; --fg: #1f1d1a; --muted: #6b6660; --line: #e3e0db;
+    --card: #ffffff; --accent: #b8542a; --accent-fg: #ffffff; --ok: #2f7d5d;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1a1917; --fg: #ece9e4; --muted: #97918a; --line: #33302c;
+      --card: #232120; --accent: #d4713f; --accent-fg: #1a1917; --ok: #6cc39b;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font-family: system-ui, -apple-system, "Segoe UI", "Yu Gothic UI", sans-serif;
+    display: flex; flex-direction: column; align-items: center;
+    min-height: 100vh; padding: 24px 16px 48px;
+  }
+  header { width: 100%; max-width: 640px; margin-bottom: 20px; }
+  .row { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  select {
+    background: var(--card); color: var(--fg); border: 1px solid var(--line);
+    border-radius: 8px; padding: 7px 10px; font: inherit; font-size: 14px;
+  }
+  .count { color: var(--muted); font-size: 14px; font-variant-numeric: tabular-nums; }
+  .bar { height: 3px; background: var(--line); border-radius: 2px; margin-top: 14px; overflow: hidden; }
+  .bar > i { display: block; height: 100%; background: var(--accent); transition: width .2s; }
+
+  .card {
+    width: 100%; max-width: 640px; background: var(--card);
+    border: 1px solid var(--line); border-radius: 16px; padding: 32px 28px;
+  }
+  .n { font-size: 13px; letter-spacing: .08em; color: var(--muted); text-transform: uppercase; }
+
+  .play {
+    display: flex; align-items: center; justify-content: center; gap: 12px;
+    width: 100%; margin: 24px 0 8px; padding: 22px;
+    background: var(--accent); color: var(--accent-fg);
+    border: none; border-radius: 12px; cursor: pointer;
+    font: inherit; font-size: 17px; font-weight: 600;
+  }
+  .play:hover { filter: brightness(1.07); }
+  .play.playing { opacity: .65; }
+  .hint { text-align: center; color: var(--muted); font-size: 13px; min-height: 20px; }
+
+  .reveal {
+    width: 100%; margin-top: 20px; padding: 13px;
+    background: transparent; color: var(--fg);
+    border: 1px solid var(--line); border-radius: 10px;
+    cursor: pointer; font: inherit; font-size: 15px;
+  }
+  .reveal:hover { border-color: var(--accent); color: var(--accent); }
+
+  .answer { margin-top: 20px; padding-top: 20px; border-top: 1px solid var(--line); }
+  .answer[hidden] { display: none; }
+  .zh { font-size: 30px; line-height: 1.5; letter-spacing: .02em; }
+  .py { margin-top: 10px; color: var(--muted); font-size: 15px; line-height: 1.6; }
+  .ja { margin-top: 16px; color: var(--ok); font-size: 17px; line-height: 1.7; }
+
+  nav { display: flex; gap: 10px; width: 100%; max-width: 640px; margin-top: 16px; }
+  nav button {
+    flex: 1; padding: 12px; background: var(--card); color: var(--fg);
+    border: 1px solid var(--line); border-radius: 10px; cursor: pointer;
+    font: inherit; font-size: 15px;
+  }
+  nav button:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+  nav button:disabled { opacity: .35; cursor: default; }
+
+  footer {
+    max-width: 640px; margin-top: 28px; color: var(--muted);
+    font-size: 13px; line-height: 1.9; text-align: center;
+  }
+  kbd {
+    background: var(--card); border: 1px solid var(--line); border-bottom-width: 2px;
+    border-radius: 5px; padding: 1px 6px; font: inherit; font-size: 12px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="row">
+    <select id="setPicker" aria-label="セット選択"></select>
+    <span class="count" id="count"></span>
+  </div>
+  <div class="bar"><i id="progress"></i></div>
+</header>
+
+<main class="card">
+  <div class="n" id="label"></div>
+
+  <button class="play" id="play">▶ 音声を再生</button>
+  <div class="hint" id="hint">聞き取れたら、意味を Claude Code に答えてください</div>
+
+  <button class="reveal" id="revealBtn">答えを表示</button>
+
+  <div class="answer" id="answer" hidden>
+    <div class="zh" id="zh"></div>
+    <div class="py" id="py"></div>
+    <div class="ja" id="ja"></div>
+  </div>
+</main>
+
+<nav>
+  <button id="prev">← 前の文</button>
+  <button id="next">次の文 →</button>
+</nav>
+
+<footer>
+  <kbd>Space</kbd> 再生 &nbsp;·&nbsp; <kbd>Enter</kbd> 答えを表示 &nbsp;·&nbsp;
+  <kbd>←</kbd> <kbd>→</kbd> 移動
+</footer>
+
+<audio id="audio"></audio>
+<script src="player_data.js"></script>
+<script>
+const sets = window.TEST_DATA || [];
+const el = id => document.getElementById(id);
+const audio = el("audio");
+
+let setIdx = 0;
+let i = 0;
+
+if (!sets.length) {
+  el("label").textContent = "player_data.js がありません。`python gen.py` を実行してください。";
+  el("play").disabled = el("revealBtn").disabled = true;
+} else {
+  // Grouped by HSK level so a growing tests/hsk<N>/ tree stays navigable.
+  const groups = new Map();
+  sets.forEach((s, k) => {
+    const level = s.level || "?";
+    if (!groups.has(level)) groups.set(level, []);
+    groups.get(level).push(k);
+  });
+  groups.forEach((idxs, level) => {
+    const og = document.createElement("optgroup");
+    og.label = level;
+    idxs.forEach(k => {
+      const o = document.createElement("option");
+      o.value = k;
+      o.textContent = sets[k].title;
+      og.append(o);
+    });
+    el("setPicker").append(og);
+  });
+  el("setPicker").onchange = e => { setIdx = +e.target.value; i = 0; render(); };
+  render();
+}
+
+function current() { return sets[setIdx].sentences[i]; }
+
+function render() {
+  const list = sets[setIdx].sentences;
+  const s = current();
+
+  el("label").textContent = `第 ${s.n} 文`;
+  el("count").textContent = `${i + 1} / ${list.length}`;
+  el("progress").style.width = `${((i + 1) / list.length) * 100}%`;
+
+  // A fresh <audio> src per sentence; never reveal the answer automatically.
+  audio.src = s.audio;
+  el("answer").hidden = true;
+  el("revealBtn").hidden = false;
+  el("zh").textContent = s.zh;
+  el("py").textContent = s.pinyin;
+  el("ja").textContent = s.ja;
+
+  el("prev").disabled = i === 0;
+  el("next").disabled = i === list.length - 1;
+  play();
+}
+
+const HINT = "聞き取れたら、意味を Claude Code に答えてください";
+
+function play() {
+  audio.currentTime = 0;
+  audio.play()
+    .then(() => { el("hint").textContent = HINT; })
+    .catch(() => {
+      // Browsers block autoplay until the user interacts with the page once.
+      el("hint").textContent = "再生ボタンを押してください（初回のみ）";
+    });
+}
+
+function reveal() {
+  el("answer").hidden = false;
+  el("revealBtn").hidden = true;
+}
+
+audio.onplay = () => el("play").classList.add("playing");
+audio.onended = audio.onpause = () => el("play").classList.remove("playing");
+
+el("play").onclick = play;
+el("revealBtn").onclick = reveal;
+el("prev").onclick = () => { if (i > 0) { i--; render(); } };
+el("next").onclick = () => { if (i < sets[setIdx].sentences.length - 1) { i++; render(); } };
+
+document.addEventListener("keydown", e => {
+  if (e.target.tagName === "SELECT") return;
+  const keys = {
+    " ": play,
+    Enter: reveal,
+    ArrowLeft: () => el("prev").click(),
+    ArrowRight: () => el("next").click(),
+  };
+  if (keys[e.key]) { e.preventDefault(); keys[e.key](); }
+});
+</script>
+</body>
+</html>
