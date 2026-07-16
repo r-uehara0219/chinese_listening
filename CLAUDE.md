@@ -44,6 +44,8 @@ python gen_vocab.py --check    # 語彙検証のみ
 3. Claude が `word`・`pinyin`・`tones_compact` と照合し正誤判定する（声調記号の有無・大文字小文字は無視）
 4. `python score.py add vocab/hsk<N>/<set名> <n> <0|1>` で記録する（リスニングと同じ `score.py` を共用、`set_id` の先頭に `vocab/` を付けて名前空間を分ける）
 
+セットを1周（全問）し終えたら、その周で不正解だった問題番号だけを抽出し、復習ラウンドとして再出題する。`results/vocab/hsk<N>/<set名>.jsonl` を読めば、直近の1周分でどの `n` が不正解だったか分かる。
+
 ## ビルド
 
 ```
